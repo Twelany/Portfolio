@@ -2224,9 +2224,22 @@ input, select, textarea {
 		input[type="button"].primary,
 		button.primary,
 		.button.primary {
-			background-color: #212931;
+			background-color: #212931bd;
 			box-shadow: none;
 			color: #ffffff !important;
+			position: absolute;
+			border-bottom: 5px solid #ffffff;
+
+		}
+		@media (max-width: 767px) {
+			.button.primary {
+				background-color: #212931bd;
+				box-shadow: none;
+				color: #ffffff !important;
+				position: static;
+				border-bottom: 5px solid #ffffff;
+			
+			}
 		}
 
 			input[type="submit"].primary:hover,
